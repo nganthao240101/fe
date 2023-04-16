@@ -49,8 +49,7 @@ export default function Topstample({ topStamples }) {
     "🚀 ~ file: index.jsx:48 ~ Topstample ~ topStamples:",
     topStamples
   );
-  // "discount, satus, photo, name, buyerPrice(450), netPrice(800), id, unit"
-  // 1 items
+ 
 
   return (
     <div>
@@ -74,8 +73,8 @@ export default function Topstample({ topStamples }) {
                 status={productTopStample?.status}
                 photo={productTopStample?.photo}
                 name={productTopStample?.name}
-                buyerPrice={productTopStample?.buyerPrice}
-                netPrice={productTopStample?.netPrice}
+                price={productTopStample?.price}
+                total={productTopStample?.total}
                 unit={productTopStample?.unit}
                 id={productTopStample?.id}
               />
@@ -93,7 +92,7 @@ function TopStampleItem({
   status,
   photo,
   name,
-  buyerPrice,
+  price,
   netPrice,
   unit,
   id,
@@ -124,7 +123,7 @@ function TopStampleItem({
               <i className="mdi mdi-cart-outline" /> Add To Cart
             </button>
             <p className="offer-price mb-0">
-              {buyerPrice} <i className="mdi mdi-tag-outline" />
+              {price  } <i className="mdi mdi-tag-outline" />
               <br />
               <span className="regular-price">{netPrice}</span>
             </p>

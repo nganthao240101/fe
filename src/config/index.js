@@ -1,5 +1,5 @@
 const API_URL =
-  document.domain === "localhost" ? "http://localhost:8080" : "production";
+  document.domain === "localhost" ? "http://localhost:8080/api" : "production";
 
 const Apis = {
   //Authentication api
