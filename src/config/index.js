@@ -1,8 +1,5 @@
 const API_URL =
-    document.domain === 'localhost'
-    ? "http://localhost:4000"
-    : "production";
-
+  document.domain === "localhost" ? "http://localhost:8080" : "production";
 
 const Apis = {
   //Authentication api
@@ -19,15 +16,14 @@ const Apis = {
   GetOrderCreateByUser: `${API_URL}/api/order/create`,
   GetOrderByUser: `${API_URL}/api/order/list`,
 
-
   //Filter by category
   GetAllCategoryList: `${API_URL}/api/category/cn/list?slug=`,
   GetFilterByCategory: `${API_URL}/api/category/c`,
 
-  //profile 
+  //profile
   GetCustomerUpdateDetails: `${API_URL}/api/customer/update`,
 
-  //Get location 
+  //Get location
   GetLocationListDetails: `${API_URL}/api/location/list`,
   GetAreaListDetails: `${API_URL}/api/location/area/list/getbyid?id=`,
 
@@ -37,11 +33,8 @@ const Apis = {
   GetProductBySubcategory: `${API_URL}/api/category/catlogsearch/product`,
 
   //Razarpayment
-  GetPaymentValue: `${API_URL}/api/payment/orders`, 
-  GetPaymentVerification: `${API_URL}/api/payment/verification`, 
-  GetPaymentOrderList: `${API_URL}/api/payment/orderlist`, 
-
-
-
+  GetPaymentValue: `${API_URL}/api/payment/orders`,
+  GetPaymentVerification: `${API_URL}/api/payment/verification`,
+  GetPaymentOrderList: `${API_URL}/api/payment/orderlist`,
 };
 export { API_URL, Apis };
